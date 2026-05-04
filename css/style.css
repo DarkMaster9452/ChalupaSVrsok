@@ -83,6 +83,7 @@ a    { color: inherit; text-decoration: none; }
 .hero { position: relative; height: 100vh; min-height: 520px; overflow: hidden; }
 .slide { position: absolute; inset: 0; opacity: 0; transition: opacity .9s ease; pointer-events: none; }
 .slide.active { opacity: 1; z-index: 1; pointer-events: all; }
+.slide.leaving { opacity: 0; z-index: 2; pointer-events: none; }
 .slide-bg { position: absolute; inset: 0; background-size: cover; background-position: center; transform: scale(1.04); transition: transform 8s ease; }
 .slide.active .slide-bg { transform: scale(1); }
 .slide-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(10,8,5,.62) 40%, rgba(10,8,5,.2) 100%); }

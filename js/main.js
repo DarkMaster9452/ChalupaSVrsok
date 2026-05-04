@@ -29,13 +29,16 @@
     const dots = document.querySelectorAll('.dot');
     let current = 0, timer;
     const goTo = i => {
-      slides[current].classList.remove('active');
+      const outgoing = slides[current];
+      outgoing.classList.add('leaving');
+      outgoing.classList.remove('active');
       if (dots[current]) dots[current].classList.remove('active');
       current = (i + slides.length) % slides.length;
       slides[current].classList.add('active');
       if (dots[current]) dots[current].classList.add('active');
+      setTimeout(() => outgoing.classList.remove('leaving'), 1000);
     };
-    const startAuto = () => { clearInterval(timer); timer = setInterval(() => goTo(current + 1), 6000); };
+    const startAuto = () => { clearInterval(timer); timer = setInterval(() => goTo(current + 1), 5000); };
     const btnPrev = document.querySelector('.slider-btn.prev');
     const btnNext = document.querySelector('.slider-btn.next');
     if (btnPrev) btnPrev.addEventListener('click', () => { goTo(current - 1); startAuto(); });
