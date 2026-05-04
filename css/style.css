@@ -35,7 +35,7 @@ a    { color: inherit; text-decoration: none; }
 }
 .sidebar::before {
   content: ''; position: absolute; inset: 0;
-  background: url('https://www.chalupasvrsok.sk/wp-content/uploads/2014/12/left_menu_background.jpg') center/cover no-repeat;
+  background: url('../downloaded-images/left_menu_background.jpg') center/cover no-repeat;
   opacity: .18; pointer-events: none;
 }
 .sidebar-logo { position: relative; z-index: 1; margin-bottom: 48px; text-align: center; }
@@ -167,7 +167,7 @@ section { padding: 90px 60px; }
 .feature-desc { font-size: .88rem; line-height: 1.7; color: var(--text-light); }
 
 /* ---- STATS ---- */
-.stats { position: relative; background: url('https://www.chalupasvrsok.sk/wp-content/uploads/2019/11/parallax-huty.jpg') center/cover no-repeat fixed; padding: 100px 60px; }
+.stats { position: relative; background: url('../downloaded-images/parallax-huty.jpg') center/cover no-repeat fixed; padding: 100px 60px; }
 .stats::before { content: ''; position: absolute; inset: 0; background: rgba(10,8,5,.6); }
 .stats-grid { position: relative; display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; text-align: center; }
 .stat-number { font-family: 'Raleway', sans-serif; font-size: clamp(2.8rem, 5vw, 4.4rem); font-weight: 700; color: var(--white); display: block; line-height: 1; margin-bottom: 12px; }
@@ -256,8 +256,26 @@ footer { background: var(--bg-dark); padding: 50px 60px; }
 }
 @media (max-width: 900px) {
   :root { --sidebar-w: 0px; }
-  .sidebar { width: 270px; transform: translateX(-100%); }
-  .sidebar.open { transform: translateX(0); }
+
+  /* Sidebar → full-width dropdown z hora (žiadne hybanie do strán) */
+  .sidebar {
+    width: 100%;
+    height: auto;
+    top: 64px;
+    left: 0; right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 6px 0 14px;
+    transform: translateY(-110%);
+    border-top: 1px solid rgba(255,255,255,.1);
+    box-shadow: 0 8px 28px rgba(0,0,0,.4);
+    overflow: hidden;
+  }
+  .sidebar.open { transform: translateY(0); overflow: visible; }
+  .sidebar-logo { display: none; }
+  .sidebar nav ul li + li { margin-top: 0; }
+  .sidebar nav ul li a { padding: 15px 28px; font-size: .88rem; border-left-width: 3px; }
+
   .mobile-header { display: flex; }
   .main { margin-left: 0; padding-top: 64px; }
   section { padding: 60px 24px; }
