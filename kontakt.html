@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Kontakt | Chalupa Pod skleným vŕškom</title>
+  <meta name="description" content="Kontaktujte nás — Šimánkovci, Ján Šimánek. Dlhá nad Oravou č. 222, okr. Dolný Kubín. Tel: +421 911 237 191."/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://chalupasvrsok.sk/kontakt"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-logo"><a href="index.html"><img src="https://www.chalupasvrsok.sk/wp-content/uploads/2019/11/logo6.png" alt="Logo"/></a></div>
+  <nav><ul>
+    <li><a href="index.html">Domov</a></li>
+    <li><a href="o-chalupe.html">O chalupe</a></li>
+    <li><a href="galeria.html">Galéria</a></li>
+    <li><a href="rezervacia.html">Rezervácia</a></li>
+    <li><a href="kontakt.html" class="active">Kontakt</a></li>
+  </ul></nav>
+</aside>
+
+<header class="mobile-header">
+  <a href="index.html"><img src="https://www.chalupasvrsok.sk/wp-content/uploads/2019/11/logo6.png" alt="Logo"/></a>
+  <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</header>
+
+<main class="main">
+
+  <div class="page-hero" style="background-image:url('https://www.chalupasvrsok.sk/wp-content/uploads/2019/11/Huty-Jakub_Koval%C3%ADk-001-1-scaled.jpg')">
+    <div class="page-hero-content">
+      <p class="breadcrumb"><a href="index.html">Domov</a><span>›</span>Kontakt</p>
+      <h1>Kontakt</h1>
+    </div>
+  </div>
+
+  <!-- KONTAKT KARTY -->
+  <section style="background:var(--white);">
+    <div class="reveal" style="margin-bottom:12px">
+      <h2 class="section-title">Kontaktujte nás</h2>
+      <div class="divider"></div>
+      <p class="section-subtitle">V prípade že si chcete našu chalupu rezervovať alebo máte akúkoľvek otázku, neváhajte nás kontaktovať.</p>
+    </div>
+    <div class="contact-grid reveal">
+      <div class="contact-card">
+        <div class="contact-icon"><i class="fa fa-house"></i></div>
+        <div>
+          <p class="contact-label">Naša rodina</p>
+          <p class="contact-value">Šimánkovci<br/>Kontaktná osoba: Ján Šimánek</p>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon"><i class="fa fa-location-dot"></i></div>
+        <div>
+          <p class="contact-label">Adresa</p>
+          <p class="contact-value">Dlhá nad Oravou č. 222<br/>027 55, okr. Dolný Kubín</p>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon"><i class="fa fa-phone"></i></div>
+        <div>
+          <p class="contact-label">Telefón</p>
+          <p class="contact-value">
+            <a href="tel:+421911237191">+421 911 237 191</a><br/>
+            <a href="tel:+421911078505">+421 911 078 505</a>
+          </p>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-icon"><i class="fa fa-envelope"></i></div>
+        <div>
+          <p class="contact-label">Email</p>
+          <p class="contact-value"><a href="mailto:filip.simanek@gmail.com">filip.simanek@gmail.com</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- MAPA -->
+    <div class="map-wrap reveal">
+      <img src="https://www.chalupasvrsok.sk/wp-content/uploads/2019/11/mapa.jpg" alt="Mapa — kde nás nájdete" loading="lazy"/>
+    </div>
+    <!-- Google Maps embed (otvorí mapu lokality) -->
+    <div class="map-wrap reveal" style="margin-top:20px">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2634.0!2d19.3!3d49.25!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zSHV0eSwgU2xvdmFraWE!5e0!3m2!1ssk!2ssk!4v1700000000000"
+        allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        title="Mapa polohy chalupy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- KONTAKTNÝ FORMULÁR -->
+  <section style="background:var(--bg-card);">
+    <div class="reveal" style="margin-bottom:48px">
+      <h2 class="section-title">Napíšte nám</h2>
+      <div class="divider"></div>
+    </div>
+    <form class="reveal" id="kontaktForm" novalidate>
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="k-meno">Meno a priezvisko *</label>
+          <input type="text" id="k-meno" name="meno" placeholder="Ján Novák" required/>
+        </div>
+        <div class="form-group">
+          <label for="k-email">E-mail *</label>
+          <input type="email" id="k-email" name="email" placeholder="jan@example.com" required/>
+        </div>
+        <div class="form-group">
+          <label for="k-tel">Telefón</label>
+          <input type="tel" id="k-tel" name="telefon" placeholder="+421 9xx xxx xxx"/>
+        </div>
+        <div class="form-group">
+          <label for="k-predmet">Predmet</label>
+          <input type="text" id="k-predmet" name="predmet" placeholder="Rezervácia, otázka..."/>
+        </div>
+        <div class="form-group full">
+          <label for="k-sprava">Správa *</label>
+          <textarea id="k-sprava" name="sprava" placeholder="Vaša správa..." required></textarea>
+        </div>
+      </div>
+      <div style="margin-top:28px">
+        <button type="submit" class="btn-submit"><i class="fa fa-paper-plane"></i>Odoslať správu</button>
+      </div>
+      <p id="kFormMsg" style="margin-top:16px;font-size:.9rem;color:var(--accent);display:none"></p>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-logo"><a href="index.html"><img src="https://www.chalupasvrsok.sk/wp-content/uploads/2019/11/logo_footer2.png" alt="logo"/></a></div>
+      <div class="footer-col"><h4>Telefón</h4><p>+421 911 237 191<br/>+421 911 078 505</p></div>
+      <div class="footer-col"><h4>Email</h4><p><a href="mailto:filip.simanek@gmail.com">filip.simanek@gmail.com</a></p></div>
+      <div class="footer-col"><h4>Otvorené celý rok</h4><p>Naša chata je pre vás pripravená počas celého roka. Tešíme sa na vás!</p></div>
+    </div>
+    <div class="footer-bottom">&copy; 2024 Chalupa Pod skleným vŕškom. Všetky práva vyhradené.</div>
+  </footer>
+</main>
+<button class="back-to-top" id="btt"><i class="fa fa-chevron-up"></i></button>
+<script src="js/main.js"></script>
+<script>
+document.getElementById('kontaktForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const m = document.getElementById('k-meno').value;
+  const em = document.getElementById('k-email').value;
+  const sp = document.getElementById('k-sprava').value;
+  if (!m || !em || !sp) { showKMsg('Prosím vyplňte všetky povinné polia.', '#c0392b'); return; }
+  const subj = encodeURIComponent(document.getElementById('k-predmet').value || 'Správa z webu');
+  const body = encodeURIComponent('Meno: ' + m + '\nEmail: ' + em + '\nTelefón: ' + document.getElementById('k-tel').value + '\n\n' + sp);
+  window.location.href = 'mailto:filip.simanek@gmail.com?subject=' + subj + '&body=' + body;
+  showKMsg('Ďakujeme! Otvorí sa váš e-mailový klient.', 'var(--accent)');
+});
+function showKMsg(txt, col) {
+  const el = document.getElementById('kFormMsg');
+  el.textContent = txt; el.style.color = col; el.style.display = 'block';
+}
+</script>
+</body>
+</html>
